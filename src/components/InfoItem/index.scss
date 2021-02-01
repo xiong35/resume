@@ -1,0 +1,36 @@
+@import "../../static/vars.scss";
+
+.info-item {
+  border-bottom: 1px solid $blue;
+  position: relative;
+  padding: 0 0.1rem;
+  line-height: 1.6rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -5%;
+    bottom: -3px;
+    width: 20%;
+    height: 1px;
+    background-color: $dark-blue;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: -5%;
+    bottom: 1px;
+    width: 10%;
+    height: 1px;
+    background-color: $blue;
+  }
+  .item-name {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 $black;
+  }
+  .item-value {
+  }
+  &::after {
+    content: "";
+    position: absolute;
+  }
+}

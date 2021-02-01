@@ -3,12 +3,13 @@
 * {
   margin: 0;
   padding: 0;
-  color: $text-light;
+  color: $text-dark;
 }
 
 html {
   font-size: 16px;
-  background-color: $bg-light;
+  background-color: $bg-dark;
+  overflow-x: hidden;
   .resume {
     max-width: 1000px;
     margin: auto;
@@ -18,5 +19,80 @@ html {
       text-align: center;
       padding: 2rem 0;
     }
+    .section {
+      padding: 0rem 1rem 2rem;
+      .title {
+        text-shadow: 1px 1px 0px $red, -1px 1px 0px $blue;
+        padding: 0 1rem;
+        line-height: 2.5rem;
+        border-bottom: 2px solid $purple;
+        position: relative;
+        &::after,
+        &::before {
+          content: "";
+          position: absolute;
+          width: 20%;
+          height: 1px;
+        }
+      }
+      &:nth-of-type(odd) {
+        .title {
+          text-align: left;
+          &::after {
+            background-color: $red;
+            right: 6%;
+            bottom: 6%;
+          }
+          &::before {
+            width: 14%;
+            background-color: $blue;
+            right: 4%;
+            bottom: 18%;
+          }
+        }
+      }
+      &:nth-of-type(even) {
+        .title {
+          text-align: right;
+          &::after {
+            background-color: $orange;
+            left: 3%;
+            bottom: 7%;
+          }
+          &::before {
+            width: 20%;
+            background-color: $yellow;
+            left: 14%;
+            bottom: 18%;
+          }
+        }
+      }
+    }
+  }
+
+  *::selection {
+    background-color: $bg-light;
+    color: $text-light;
+    text-shadow: none;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: $bg-light $bg-dark;
+  }
+
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: $bg-dark;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $bg-dark;
+    border-radius: 20px;
+    border: 3px solid $bg-dark;
   }
 }

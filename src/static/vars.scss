@@ -1,25 +1,18 @@
-$bg-dark: #080808;
+$bg-dark: #222229;
 $bg-light: #f1f1ee;
 $text-dark: #f6f6f6;
 $text-light: #212121;
 
-$purple: #c77faf;
-$blue: #34bed6;
-$cyan: #3dd4cf;
+$purple: #5b86e5;
+$blue: #36d1dc;
+$dark-blue: #007991;
+$cyan: #78ffd6;
 $green: #54ca72;
 $yellow: #ffee60;
 $orange: #ef9d46;
 $red: #f86058;
-$black: #222222;
+$black: #333333;
 $white: #f0f0f0;
 
-@mixin blue-bg() {
-  background: #36d1dc;
-  background: -webkit-linear-gradient(60deg, #5b86e5, #36d1dc);
-  background: linear-gradient(60deg, #5b86e5, #36d1dc);
-}
-@mixin green-bg() {
-  background: #007991;
-  background: -webkit-linear-gradient(120deg, #78ffd6, #007991);
-  background: linear-gradient(120deg, #78ffd6, #007991);
-}
+$blue-grad: linear-gradient(60deg, $purple, $blue);
+$green-grad: linear-gradient(120deg, $cyan, $dark-blue);

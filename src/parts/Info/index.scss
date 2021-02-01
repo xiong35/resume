@@ -1,0 +1,15 @@
+@import "../../static/vars.scss";
+
+.info {
+  .items {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: left;
+    align-items: center;
+    gap: 0.7rem;
+    @media (max-width: 450px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
