@@ -1,0 +1,25 @@
+$bg-dark: #080808;
+$bg-light: #f1f1ee;
+$text-dark: #f6f6f6;
+$text-light: #212121;
+
+$purple: #c77faf;
+$blue: #34bed6;
+$cyan: #3dd4cf;
+$green: #54ca72;
+$yellow: #ffee60;
+$orange: #ef9d46;
+$red: #f86058;
+$black: #222222;
+$white: #f0f0f0;
+
+@mixin blue-bg() {
+  background: #36d1dc;
+  background: -webkit-linear-gradient(60deg, #5b86e5, #36d1dc);
+  background: linear-gradient(60deg, #5b86e5, #36d1dc);
+}
+@mixin green-bg() {
+  background: #007991;
+  background: -webkit-linear-gradient(120deg, #78ffd6, #007991);
+  background: linear-gradient(120deg, #78ffd6, #007991);
+}

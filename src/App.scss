@@ -1,0 +1,22 @@
+@import "static/vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  color: $text-light;
+}
+
+html {
+  font-size: 16px;
+  background-color: $bg-light;
+  .resume {
+    max-width: 1000px;
+    margin: auto;
+    min-height: 100vh;
+
+    .heading {
+      text-align: center;
+      padding: 2rem 0;
+    }
+  }
+}
