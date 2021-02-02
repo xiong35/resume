@@ -3,12 +3,12 @@
 * {
   margin: 0;
   padding: 0;
-  color: $text-dark;
+  color: $text-light;
 }
 
 html {
   font-size: 16px;
-  background-color: $bg-dark;
+  background-color: $bg-light;
   overflow-x: hidden;
   .resume {
     max-width: 1000px;
@@ -22,7 +22,9 @@ html {
     .section {
       padding: 0rem 1rem 2rem;
       .title {
-        text-shadow: 1px 1px 0px $red, -1px 1px 0px $blue;
+        // text-shadow: 1px 1px 0px transparentize($red, 0.2),
+        //   -1px 1px 0px transparentize($blue, 0.2);
+        color: $text-light;
         padding: 0 1rem;
         line-height: 2.5rem;
         border-bottom: 2px solid $purple;
@@ -33,6 +35,99 @@ html {
           position: absolute;
           width: 20%;
           height: 1px;
+        }
+        .glitch {
+          position: relative;
+          @keyframes noise-anim1 {
+            0% {
+              clip-path: inset(26% 0% 68% 0%);
+            }
+            10% {
+              clip-path: inset(51% 0% 39% 0%);
+            }
+            20% {
+              clip-path: inset(60% 0% 26% 0%);
+            }
+            30% {
+              clip-path: inset(87% 0% 4% 0%);
+            }
+            40% {
+              clip-path: inset(17% 0% 75% 0%);
+            }
+            50% {
+              clip-path: inset(58% 0% 38% 0%);
+            }
+            60% {
+              clip-path: inset(80% 0% 7% 0%);
+            }
+            70% {
+              clip-path: inset(25% 0% 68% 0%);
+            }
+            80% {
+              clip-path: inset(83% 0% 11% 0%);
+            }
+            90% {
+              clip-path: inset(8% 0% 81% 0%);
+            }
+            100% {
+              clip-path: inset(26% 0% 68% 0%);
+            }
+          }
+          @keyframes noise-anim2 {
+            0% {
+              clip-path: inset(43% 0% 51% 0%);
+            }
+            10% {
+              clip-path: inset(94% 0% -5% 0%);
+            }
+            20% {
+              clip-path: inset(63% 0% 27% 0%);
+            }
+            30% {
+              clip-path: inset(79% 0% 15% 0%);
+            }
+            40% {
+              clip-path: inset(37% 0% 52% 0%);
+            }
+            50% {
+              clip-path: inset(42% 0% 44% 0%);
+            }
+            60% {
+              clip-path: inset(29% 0% 64% 0%);
+            }
+            70% {
+              clip-path: inset(86% 0% 6% 0%);
+            }
+            80% {
+              clip-path: inset(91% 0% 1% 0%);
+            }
+            90% {
+              clip-path: inset(31% 0% 64% 0%);
+            }
+            100% {
+              clip-path: inset(43% 0% 51% 0%);
+            }
+          }
+          &:hover::after,
+          &:hover::before {
+            color: white;
+            content: attr(data-text);
+            position: absolute;
+            word-break: keep-all;
+            animation: 2s infinite linear alternate;
+            top: -4px;
+          }
+          &:hover::after {
+            left: 1px;
+            text-shadow: -2px 0 $red;
+            animation-name: noise-anim1;
+            animation-duration: 2.4s;
+          }
+          &:hover::before {
+            left: -1px;
+            text-shadow: 2px 0 $blue;
+            animation-name: noise-anim2;
+          }
         }
       }
       &:nth-of-type(odd) {
@@ -61,7 +156,7 @@ html {
           }
           &::before {
             width: 20%;
-            background-color: $yellow;
+            background-color: $green;
             left: 14%;
             bottom: 18%;
           }
@@ -71,14 +166,14 @@ html {
   }
 
   *::selection {
-    background-color: $bg-light;
-    color: $text-light;
+    background-color: $text-light;
+    color: $bg-light;
     text-shadow: none;
   }
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: $bg-light $bg-dark;
+    scrollbar-color: $text-light $bg-light;
   }
 
   *::-webkit-scrollbar {
@@ -87,12 +182,12 @@ html {
   }
 
   *::-webkit-scrollbar-track {
-    background: $bg-dark;
+    background: $bg-light;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: $bg-dark;
+    background-color: $bg-light;
     border-radius: 20px;
-    border: 3px solid $bg-dark;
+    border: 3px solid $text-light;
   }
 }

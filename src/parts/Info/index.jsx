@@ -17,7 +17,11 @@ class index extends Component {
   render() {
     return (
       <section className="section info">
-        <h2 className="title">个人信息</h2>
+        <h2 className="title">
+          <span className="glitch" data-text="个人信息">
+            个人信息
+          </span>
+        </h2>
         <div className="items">
           {Object.keys(infoMap).map((key) => (
             <InfoItem key={key} name={key} value={infoMap[key]} />
