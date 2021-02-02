@@ -70,7 +70,7 @@ const experiences = [
   {
     name: "个人简历",
     from: "2021/2/1",
-    to: "2021/2/3",
+    to: "2021/2/2",
     description: "用 react 编写的个人简历。",
     links: [
       { name: "部署地址", href: "http://resume.xiong35.cn" },

@@ -8,6 +8,7 @@
     gap: 1.5rem;
     @media (max-width: 750px) {
       grid-template-columns: 1fr;
+      padding: 2rem 0.5rem 0;
     }
   }
 }

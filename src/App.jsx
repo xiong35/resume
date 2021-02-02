@@ -16,6 +16,9 @@ export default class App extends Component {
         <Skills />
         <Experience />
         <footer className="footer">
+          <h2 style={{ marginBottom: "3rem" }}>
+            期待收到您的回复！
+          </h2>
           <a
             className="footer-item"
             href="http://resume.xiong35.cn"
