@@ -11,6 +11,17 @@ export default class App extends Component {
         <Info />
         <Info />
         <Info />
+        <footer className="footer">
+          <a
+            className="footer-item"
+            href="http://resume.xiong35.cn"
+          >
+            简历链接
+          </a>
+          <a className="footer-item" href="http://www.xiong35.cn">
+            博客链接
+          </a>
+        </footer>
       </div>
     );
   }

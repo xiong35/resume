@@ -163,6 +163,19 @@ html {
         }
       }
     }
+    .footer {
+      text-align: center;
+      padding-bottom: 1rem;
+      .footer-item {
+        color: #8888;
+        padding: 0 1rem;
+        border-right: 1px solid;
+        text-decoration: none;
+        &:last-child {
+          border: none;
+        }
+      }
+    }
   }
 
   *::selection {
