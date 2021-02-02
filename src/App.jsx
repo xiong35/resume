@@ -3,6 +3,7 @@ import "./App.scss";
 
 import Info from "./parts/Info";
 import Summary from "./parts/Summary";
+import Skills from "./parts/Skills";
 
 export default class App extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class App extends Component {
         <h1 className="heading">熊逸朗的简历</h1>
         <Info />
         <Summary />
-        <Info />
+        <Skills />
         <Info />
         <footer className="footer">
           <a

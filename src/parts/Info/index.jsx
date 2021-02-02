@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import InfoItem from "../../components/InfoItem";
+import Title from "../../components/CTitle";
 
 import "./index.scss";
 
@@ -17,11 +18,7 @@ export default class Info extends Component {
   render() {
     return (
       <section className="section info">
-        <h2 className="title">
-          <span className="glitch" data-text="基本信息">
-            基本信息
-          </span>
-        </h2>
+        <Title text="基本信息" />
         <div className="info-main">
           <div className="items">
             {Object.keys(infoMap).map((key) => (
