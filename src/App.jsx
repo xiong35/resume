@@ -4,6 +4,7 @@ import "./App.scss";
 import Info from "./parts/Info";
 import Summary from "./parts/Summary";
 import Skills from "./parts/Skills";
+import Experience from "./parts/Experience";
 
 export default class App extends Component {
   render() {
@@ -13,7 +14,7 @@ export default class App extends Component {
         <Info />
         <Summary />
         <Skills />
-        <Info />
+        <Experience />
         <footer className="footer">
           <a
             className="footer-item"

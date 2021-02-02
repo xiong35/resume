@@ -1,0 +1,73 @@
+@import "../../static/vars.scss";
+
+.exp-item {
+  border: 1px solid $dark-blue;
+  border-left: 1px solid $dark-blue;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    bottom: 1px;
+    right: 1px;
+    border-right: 1px solid $blue;
+    border-bottom: 1px solid $blue;
+    box-shadow: 3px 3px 0px $bg-light, 4px 4px 0px $purple;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 3px;
+    left: -5px;
+    border-top: 1px solid $blue;
+    border-left: 1px solid $blue;
+    box-shadow: 7px -7px 0px $bg-light, 10px -7px 0px $bg-light,
+      8px -8px 0px $cyan;
+    z-index: -1;
+  }
+  .time {
+    margin: 0.7rem;
+    color: transparentize($text-light, 0.5);
+    .from {
+      color: inherit;
+      position: relative;
+      margin-right: 1.4rem;
+      margin-left: 0.2rem;
+      &::before {
+        content: ">";
+        position: absolute;
+        top: -0.05rem;
+        left: -1rem;
+      }
+      &::after {
+        content: "-";
+        position: absolute;
+        top: 0%;
+        right: -0.9rem;
+      }
+    }
+    .to {
+      color: inherit;
+    }
+  }
+  .description {
+    padding: 0 0.2rem 1rem;
+    text-indent: 1.6rem;
+  }
+  .links {
+    padding: 0 1.2rem;
+    li {
+      a {
+        text-decoration: none;
+        color: #0366d6;
+      }
+    }
+  }
+}

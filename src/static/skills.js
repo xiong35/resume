@@ -19,6 +19,10 @@ const skills = [
     name: "TypeScript",
     level: 2
   },
+  {
+    name: "小程序",
+    level: 2
+  },
 ]
 
 export default skills;
