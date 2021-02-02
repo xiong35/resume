@@ -3,16 +3,9 @@ import React, { Component } from "react";
 import InfoItem from "../../components/InfoItem";
 import Title from "../../components/CTitle";
 
-import "./index.scss";
+import infoMap from "../../static/infos";
 
-const infoMap = {
-  姓名: "熊逸朗",
-  性别: "男",
-  电话: "18827090877",
-  邮箱: "xiong35@qq.com",
-  微信: "xyl2242787668",
-  网站: "www.xiong35.cn",
-};
+import "./index.scss";
 
 export default class Info extends Component {
   render() {

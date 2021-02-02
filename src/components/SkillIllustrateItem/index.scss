@@ -1,0 +1,19 @@
+.illustrate-item {
+  position: relative;
+  width: 10rem;
+  .cubes {
+    display: flex;
+    justify-content: flex-start;
+    .bar-item {
+      width: 0.7rem;
+      height: 0.7rem;
+      margin: 0 0.3rem;
+    }
+  }
+  .text {
+    font-size: 0.7rem;
+    position: absolute;
+    right: 0;
+    top: -0.2rem;
+  }
+}

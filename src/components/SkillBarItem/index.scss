@@ -1,0 +1,33 @@
+@import "../../static/vars.scss";
+
+.bar-item {
+  $theme: $purple;
+  $size: 1rem;
+  width: $size;
+  height: $size;
+  background-color: $theme;
+  margin: 0.5rem;
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    transform-origin: 0 100%;
+  }
+  &::before {
+    transform: skewX(-45deg);
+    background-color: lighten($theme, 20%);
+    height: 30%;
+    width: 100%;
+    top: -30%;
+    left: 0;
+  }
+  &::after {
+    transform: skewY(-45deg);
+    background-color: darken($theme, 20%);
+    height: 102%;
+    width: 30%;
+    right: -30%;
+    top: 0;
+  }
+}

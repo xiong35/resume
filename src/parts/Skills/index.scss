@@ -1,0 +1,22 @@
+.skills {
+  .skills-main {
+    .skill-items {
+      padding: 1rem 2rem 7rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    .illustrate {
+      padding-top: 1rem;
+      max-width: 60%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      gap: 0.7rem;
+      @media (max-width: 450px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

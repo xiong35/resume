@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Title from "../../components/CTitle";
 
 import "./index.scss";
 
@@ -6,11 +7,7 @@ export default class Summary extends Component {
   render() {
     return (
       <section className="section summary">
-        <h2 className="title">
-          <span className="glitch" data-text="个人简介">
-            个人简介
-          </span>
-        </h2>
+        <Title text="个人简介" />
         <div className="summary-main">
           <p>
             您好，我是<b>华中科技大学19级本科生</b>

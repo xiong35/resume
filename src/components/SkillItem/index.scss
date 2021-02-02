@@ -1,0 +1,32 @@
+$height: 1.8rem;
+
+.skill-item {
+  width: 3rem;
+  height: 10rem;
+  position: relative;
+  .bar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .skill-info {
+    position: absolute;
+    bottom: -$height;
+    left: 60%;
+    white-space: nowrap;
+    transform: rotateZ(60deg);
+    transform-origin: 0 0;
+    .icon {
+      width: $height;
+      height: $height;
+      vertical-align: middle;
+    }
+    .name {
+      line-height: $height;
+      vertical-align: middle;
+      margin-left: 0.4rem;
+    }
+  }
+}
