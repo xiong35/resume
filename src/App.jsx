@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 
 import Info from "./parts/Info";
+import Summary from "./parts/Summary";
 
 export default class App extends Component {
   render() {
@@ -9,6 +10,7 @@ export default class App extends Component {
       <div className="resume dark">
         <h1 className="heading">熊逸朗的简历</h1>
         <Info />
+        <Summary />
         <Info />
         <Info />
         <footer className="footer">

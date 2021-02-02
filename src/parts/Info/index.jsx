@@ -13,13 +13,13 @@ const infoMap = {
   网站: "www.xiong35.cn",
 };
 
-class index extends Component {
+export default class Info extends Component {
   render() {
     return (
       <section className="section info">
         <h2 className="title">
-          <span className="glitch" data-text="个人信息">
-            个人信息
+          <span className="glitch" data-text="基本信息">
+            基本信息
           </span>
         </h2>
         <div className="info-main">
@@ -43,5 +43,3 @@ class index extends Component {
     );
   }
 }
-
-export default index;
