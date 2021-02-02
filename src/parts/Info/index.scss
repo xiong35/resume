@@ -1,15 +1,34 @@
 @import "../../static/vars.scss";
 
 .info {
-  .items {
-    padding: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: left;
-    align-items: center;
-    gap: 0.7rem;
+  .info-main {
+    display: flex;
+    max-width: 95%;
+    margin: auto;
     @media (max-width: 450px) {
-      grid-template-columns: 1fr;
+      flex-direction: column-reverse;
+    }
+    .items {
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: left;
+      align-items: center;
+      gap: 0.7rem;
+      @media (max-width: 750px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    .photo-holder {
+      padding: 2rem 0;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      .photo {
+        display: block;
+        width: 200px;
+        margin: auto;
+      }
     }
   }
 }

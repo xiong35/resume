@@ -22,10 +22,22 @@ class index extends Component {
             个人信息
           </span>
         </h2>
-        <div className="items">
-          {Object.keys(infoMap).map((key) => (
-            <InfoItem key={key} name={key} value={infoMap[key]} />
-          ))}
+        <div className="info-main">
+          <div className="items">
+            {Object.keys(infoMap).map((key) => (
+              <InfoItem
+                key={key}
+                name={key}
+                value={infoMap[key]}
+              />
+            ))}
+          </div>
+          <div className="photo-holder">
+            <img
+              className="photo"
+              src={require("../../static/image/photo.jpg").default}
+            ></img>
+          </div>
         </div>
       </section>
     );
