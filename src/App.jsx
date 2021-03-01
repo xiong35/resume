@@ -6,6 +6,21 @@ import Summary from "./parts/Summary";
 import Skills from "./parts/Skills";
 import Experience from "./parts/Experience";
 
+const footerLinks = [
+  {
+    content: "简历链接",
+    href: "http://resume.xiong35.cn",
+  },
+  {
+    content: "博客链接",
+    href: "http://www.xiong35.cn",
+  },
+  {
+    content: "github",
+    href: "https://github.com/xiong35",
+  },
+];
+
 export default class App extends Component {
   render() {
     return (
@@ -19,15 +34,15 @@ export default class App extends Component {
           <h2 style={{ marginBottom: "3rem" }}>
             期待收到您的回复！
           </h2>
-          <a
-            className="footer-item"
-            href="http://resume.xiong35.cn"
-          >
-            简历链接
-          </a>
-          <a className="footer-item" href="http://www.xiong35.cn">
-            博客链接
-          </a>
+          {footerLinks.map((item) => (
+            <a
+              className="footer-item"
+              href={item.href}
+              key={item.href}
+            >
+              {item.content}
+            </a>
+          ))}
         </footer>
       </div>
     );

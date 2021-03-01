@@ -14,7 +14,13 @@ export default class InfoItem extends Component {
     return (
       <span className="info-item">
         <span className="item-name">{name}：</span>
-        <span className="item-value">{value}</span>
+        {value.startsWith("http") ? (
+          <a href={value} className="item-value">
+            {value}
+          </a>
+        ) : (
+          <span className="item-value">{value}</span>
+        )}
       </span>
     );
   }

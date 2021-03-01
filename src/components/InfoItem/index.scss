@@ -38,7 +38,11 @@
   .item-name {
     font-weight: bold;
   }
-  .item-value {
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
   &::after {
     content: "";
