@@ -1,12 +1,20 @@
-const infoMap = {
-  姓名: "熊逸朗",
-  性别: "男",
-  电话: "18827090877",
-  邮箱: "xiong35@qq.com",
-  微信: "xyl2242787668",
-  网站: "http://www.xiong35.cn",
-  学校: "华中科技大学",
-  GitHub: "https://github.com/xiong35",
-};
+const infos = [
+  { name: "姓名", value: "熊逸朗" },
+  { name: "性别", value: "男" },
+  { name: "电话", value: "18827090877" },
+  { name: "邮箱", value: "xiong35@qq.com" },
+  {
+    name: "网站",
+    value: "www.xiong35.cn",
+    href: "http://www.xiong35.cn",
+  },
+  { name: "学校", value: "华中科技大学" },
+  { name: "专业", value: "计算机科学与技术" },
+  {
+    name: "GitHub",
+    value: "xiong35",
+    href: "https://github.com/xiong35",
+  },
+];
 
-export default infoMap;
+export default infos;

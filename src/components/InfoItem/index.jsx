@@ -10,12 +10,12 @@ export default class InfoItem extends Component {
   };
 
   render() {
-    const { name, value } = this.props;
+    const { name, value, href } = this.props;
     return (
       <span className="info-item">
         <span className="item-name">{name}：</span>
-        {value.startsWith("http") ? (
-          <a href={value} className="item-value">
+        {href ? (
+          <a href={href} className="item-value">
             {value}
           </a>
         ) : (

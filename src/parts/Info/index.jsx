@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import InfoItem from "../../components/InfoItem";
 import Title from "../../components/CTitle";
 
-import infoMap from "../../static/infos";
+import infos from "../../static/infos";
 
 import "./index.scss";
 
@@ -14,12 +14,8 @@ export default class Info extends Component {
         <Title text="基本信息" />
         <div className="info-main">
           <div className="items">
-            {Object.keys(infoMap).map((key) => (
-              <InfoItem
-                key={key}
-                name={key}
-                value={infoMap[key]}
-              />
+            {infos.map((info) => (
+              <InfoItem {...info} key={info.name} />
             ))}
           </div>
           <div className="photo-holder">
