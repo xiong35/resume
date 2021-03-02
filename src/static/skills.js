@@ -8,6 +8,10 @@ const skills = [
     level: 4,
   },
   {
+    name: "Python",
+    level: 4,
+  },
+  {
     name: "Flutter",
     level: 3,
   },
@@ -17,10 +21,6 @@ const skills = [
   },
   {
     name: "Vue3",
-    level: 2,
-  },
-  {
-    name: "TypeScript",
     level: 2,
   },
   {
