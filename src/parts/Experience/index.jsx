@@ -11,7 +11,7 @@ export default class Experience extends Component {
   render() {
     return (
       <section className="section experience">
-        <Title text="项目经历" />
+        <Title text="代表性项目经历" />
         <div className="experience-items">
           {experiences.map((e) => (
             <ExpItem key={e.name} {...e} />
