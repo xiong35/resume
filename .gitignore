@@ -26,3 +26,4 @@ yarn-error.log*
 t.*
 temp.*
 package-lock.json
+*.zip
