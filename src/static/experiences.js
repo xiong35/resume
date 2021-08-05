@@ -47,6 +47,20 @@ const experiences = [
       { name: "部署地址", href: "http://cancan.xiong35.cn:99/" },
     ],
   },
+  {
+    name: "狼人杀",
+    from: "2021/3/30",
+    to: "2021/8/4",
+    description:
+      "独立完成的狼人杀项目，能由后端自动处理游戏操作。使用了责任链、策略模式等多种设计模式，便于后续进行功能迭代。前后端均使用 TS 开发，便于长期维护。",
+    links: [
+      { name: "部署地址", href: "http://werewolf.xiong35.cn" },
+      {
+        name: "代码地址",
+        href: "https://github.com/xiong35/werewolf/",
+      },
+    ],
+  },
 ];
 
 export default experiences;

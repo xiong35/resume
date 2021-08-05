@@ -18,7 +18,10 @@ export default class Summary extends Component {
           <ul className="introductions">
             {introductions.map((intro) => (
               <li key={intro.name}>
-                <strong>{intro.name}：</strong>
+                <strong>
+                  {intro.name}
+                  {intro.value ? "：" : "。"}
+                </strong>
                 {intro.value}
               </li>
             ))}
