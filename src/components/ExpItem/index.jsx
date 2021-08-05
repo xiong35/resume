@@ -25,7 +25,9 @@ export default class ExperienceItem extends Component {
         <ul className="links">
           {links.map((link) => (
             <li key={link.href}>
-              <a href={link.href}>{link.name}</a>
+              <a href={link.href} target="_blank">
+                {link.name}
+              </a>
             </li>
           ))}
         </ul>
