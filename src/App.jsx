@@ -16,7 +16,7 @@ const footerLinks = [
     href: "http://www.xiong35.cn",
   },
   {
-    content: "github",
+    content: "GitHub",
     href: "https://github.com/xiong35",
   },
 ];
