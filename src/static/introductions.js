@@ -1,8 +1,8 @@
 const introductions = [
-  // {
-  //   name: "深入了解 JavaScript",
-  //   value: "仔细阅读过 ECMAScript 2021 标准规范。",
-  // },
+  {
+    name: "深入了解 JavaScript",
+    value: "仔细阅读过 ECMAScript 2021 标准规范。",
+  },
   {
     name: "熟悉前端框架",
     value:

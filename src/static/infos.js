@@ -1,7 +1,7 @@
 const infos = [
-  { name: "姓名", value: "熊同学" },
+  { name: "姓名", value: "熊逸朗" },
   { name: "性别", value: "男" },
-  { name: "电话", value: "188****0877" },
+  { name: "电话", value: "18827090877" },
   { name: "邮箱", value: "xiong35@foxmail.com" },
   {
     name: "网站",
