@@ -22,7 +22,7 @@ export default class Summary extends Component {
                   {intro.name}
                   {intro.value ? "：" : "。"}
                 </strong>
-                {intro.value}
+                <span dangerouslySetInnerHTML={{ __html: intro.value }}></span>
               </li>
             ))}
           </ul>

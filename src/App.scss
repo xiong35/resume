@@ -36,6 +36,14 @@ html {
         }
       }
     }
+
+    a {
+      text-decoration: none;
+      color: #0366d6;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   *::selection {

@@ -38,13 +38,6 @@
   .item-name {
     font-weight: bold;
   }
-  a {
-    text-decoration: none;
-    color: #0366d6;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
   &::after {
     content: "";
     position: absolute;
