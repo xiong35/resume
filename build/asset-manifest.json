@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2cd67b89.chunk.css",
+    "main.js": "/static/js/main.fb9876a8.chunk.js",
+    "main.js.map": "/static/js/main.fb9876a8.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.611bea26.js",
+    "runtime-main.js.map": "/static/js/runtime-main.611bea26.js.map",
+    "static/js/2.2057fa93.chunk.js": "/static/js/2.2057fa93.chunk.js",
+    "static/js/2.2057fa93.chunk.js.map": "/static/js/2.2057fa93.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.2cd67b89.chunk.css.map": "/static/css/main.2cd67b89.chunk.css.map",
+    "static/js/2.2057fa93.chunk.js.LICENSE.txt": "/static/js/2.2057fa93.chunk.js.LICENSE.txt",
+    "static/media/Flutter.svg": "/static/media/Flutter.be80691e.svg",
+    "static/media/Node.svg": "/static/media/Node.2bc9347e.svg",
+    "static/media/Python.svg": "/static/media/Python.0d7a5dbe.svg",
+    "static/media/React.svg": "/static/media/React.ad1990fe.svg",
+    "static/media/TypeScript.svg": "/static/media/TypeScript.baddb1c6.svg",
+    "static/media/Vue.svg": "/static/media/Vue.1840a1b3.svg",
+    "static/media/photo.jpg": "/static/media/photo.e2ae8024.jpg",
+    "static/media/小程序.svg": "/static/media/小程序.84512049.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.611bea26.js",
+    "static/js/2.2057fa93.chunk.js",
+    "static/css/main.2cd67b89.chunk.css",
+    "static/js/main.fb9876a8.chunk.js"
+  ]
+}
