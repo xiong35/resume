@@ -1,51 +1,11 @@
 const experiences = [
   {
-    name: "个人博客v2.0",
-    from: "2020/5/28",
-    to: "2020/6/20",
-    description:
-      "个人独立完成的第二版博客网站。使用 nuxt + vuetify + golang 开发。是学习前端的第二个项目，锻炼了 vue 的实战能力。现部署在服务器上，持续使用并维护。",
-    links: [
-      {
-        name: "部署地址",
-        href: "http://www.xiong35.cn/blog2.0/articles",
-      },
-      {
-        name: "前端代码地址",
-        href: "https://github.com/xiong35/nuxt-blog/",
-      },
-      {
-        name: "后端代码地址",
-        href: "https://github.com/xiong35/go_blog_backend/",
-      },
-    ],
-  },
-  {
-    name: "Feelings",
-    from: "2020/10/1",
-    to: "2020/10/14",
-    description:
-      "个人独立完成的音乐 app，使用 flutter 开发。凭此项目在冰岩作坊（知名高校互联网团队）实习期脱颖而出，加入其中。",
-    links: [
-      {
-        name: "apk 下载地址",
-        href: "http://static.xiong35.cn/apk/feelings.apk",
-      },
-      {
-        name: "代码地址",
-        href: "https://github.com/xiong35/Feelings/",
-      },
-    ],
-  },
-  {
     name: "Panda",
     from: "2021/1/16",
     to: "2021/2/1",
     description:
       "合作完成的生活记录网站。用 react 进行前端开发，egg.js 编写后台逻辑。本人负责编写后台逻辑和前端的三个界面。现部署在服务器上，持续使用并维护。",
-    links: [
-      { name: "部署地址", href: "http://cancan.xiong35.cn:99/" },
-    ],
+    links: [{ name: "部署地址", href: "http://cancan.xiong35.cn:99/" }],
   },
   {
     name: "狼人杀",
@@ -58,6 +18,36 @@ const experiences = [
       {
         name: "代码地址",
         href: "https://github.com/xiong35/werewolf/",
+      },
+    ],
+  },
+  {
+    name: "个人博客v3.0",
+    from: "2021/9/17",
+    to: "2021/10/1",
+    description:
+      "个人独立完成的第三版博客网站。使用 Vue3 + tsx + Koa 开发，使用 TS 编写前后端。通过将 Vue 和 tsx 结合能写出]更有表现力的代码。此项目中的诸多动画锻炼了 CSS 能力。现部署在服务器上，持续使用并维护。",
+    links: [
+      {
+        name: "部署地址",
+        href: "http://www.xiong35.cn/blog3.0/posts",
+      },
+      {
+        name: "代码地址",
+        href: "https://github.com/xiong35/blog3.0/",
+      },
+    ],
+  },
+  {
+    name: "BB Hust",
+    from: "2021/5/23",
+    to: "至今",
+    description:
+      "华科校内论坛，使用 Vue3 + TS 开发，本人独立负责前端的全部开发。界面繁多，在其中我多次抽离封装重复逻辑和布局，同时灵活使用 TS 技巧进行严格的类型约束。由于仅校内学生准入，可登录游客账号查看效果：账号:U000000000，密码:123456",
+    links: [
+      {
+        name: "部署地址",
+        href: "https://bb.hust.online",
       },
     ],
   },

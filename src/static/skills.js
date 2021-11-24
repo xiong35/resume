@@ -8,11 +8,11 @@ const skills = [
     level: 4,
   },
   {
-    name: "Node",
+    name: "TypeScript",
     level: 4,
   },
   {
-    name: "TypeScript",
+    name: "Node",
     level: 3,
   },
   {

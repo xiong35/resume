@@ -15,7 +15,7 @@ export default class InfoItem extends Component {
       <span className="info-item">
         <span className="item-name">{name}：</span>
         {href ? (
-          <a href={href} className="item-value">
+          <a href={href} target="_blank" className="item-value" rel="noreferrer">
             {value}
           </a>
         ) : (
