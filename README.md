@@ -20,7 +20,7 @@
     │   └── Summary         # 个人简介
     └── static
         ├── image
-        │   ├── *.(png|jpeg|svg)    # 专业技能 部分用到的 logo， 文件名(不带后缀)与展示文字相同
+        │   ├── *.svg       # 专业技能 部分用到的 logo， 文件名(不带后缀)与展示文字相同
         │   ├── photo.jpg   # 自己的照片
         ├── footers.js      # 配置底部 footer 链接
         ├── experiences.js  # 配置代表性项目经历
