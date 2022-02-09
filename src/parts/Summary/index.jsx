@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import Title from "../../components/CTitle";
 
-import introductions from "../../static/introductions";
+import summaries from "../../static/summaries";
 
 import "./index.scss";
 
@@ -16,13 +16,13 @@ export default class Summary extends Component {
             熊逸朗。以下是我的优势：
           </p>
           <ul className="introductions">
-            {introductions.map((intro) => (
-              <li key={intro.name}>
+            {summaries.map((sum) => (
+              <li key={sum.brief}>
                 <strong>
-                  {intro.name}
-                  {intro.value ? "：" : "。"}
+                  {sum.brief}
+                  {sum.detail ? "：" : "。"}
                 </strong>
-                <span dangerouslySetInnerHTML={{ __html: intro.value }}></span>
+                <span dangerouslySetInnerHTML={{ __html: sum.detail }}></span>
               </li>
             ))}
           </ul>

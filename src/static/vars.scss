@@ -1,7 +1,5 @@
-$bg-dark: #222229;
-$bg-light: #fff;
-$text-dark: #f6f6f6;
-$text-light: #212121;
+$bg-light: #fff; // 背景色
+$text-light: #212121; // 前景色（文本颜色）
 
 $purple: #5b86e5;
 $blue: #36d1dc;
@@ -13,6 +11,3 @@ $orange: #ef9d46;
 $red: #f86058;
 $black: #333333;
 $white: #f0f0f0;
-
-$blue-grad: linear-gradient(60deg, $purple, $blue);
-$green-grad: linear-gradient(120deg, $cyan, $dark-blue);
